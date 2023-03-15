@@ -52,8 +52,8 @@ public class WeatherForecastTestSuite {
         //When
         double result = weatherForecast.averageTemperature();
         //Then
-        double expectedResult = (25.5 + 26.2 + 24.8 + 25.2 + 26.1) / 5;
-        Assertions.assertEquals(expectedResult,result, 0.001);
+
+        Assertions.assertEquals(25.56, result, 0.001);
     }
 
     @Test
