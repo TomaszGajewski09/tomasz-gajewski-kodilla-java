@@ -1,6 +1,7 @@
 package com.kodilla.stream;
 
 import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.iterate.NumbersGenerator;
 import com.kodilla.stream.lambda.Executor;
 import com.kodilla.stream.lambda.ExpressionExecutor;
 import com.kodilla.stream.lambda.Processor;
@@ -23,6 +24,7 @@ public class StreamMain {
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::subBFromA);
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::divideAByB);
 */
+/*
 
         PoemBeautifier poemBeautifier = new PoemBeautifier();
         System.out.println("Beautifying texts with lambdas");
@@ -30,6 +32,9 @@ public class StreamMain {
         poemBeautifier.beautify("Nice to meet you", "**", (text, beautifier) -> beautifier + text + beautifier);
         poemBeautifier.beautify("xyz", "abc", (text, beautifier) -> beautifier.toLowerCase() + text.toUpperCase() + beautifier.toLowerCase());
         poemBeautifier.beautify("What is the length of this word?", "Don't know", (text, beautifier) -> text.length() + text + text.length());
+*/
 
+        System.out.println("Using Stream to generate even numbers from 1 to 20");
+        NumbersGenerator.generateEven(20);
     }
 }
