@@ -1,6 +1,7 @@
 package com.kodilla.challenges;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 class MovieStore {
 
@@ -28,9 +29,10 @@ class MovieStore {
     public static void main(String[] args) {
         MovieStore movieStore = new MovieStore();
 
-        movieStore.getMovies().entrySet().stream()
-                .flatMap(entry -> entry.getValue().stream()
-                        .map(title -> title + "!"))
-                .forEach(System.out::print);
+        String titles = movieStore.getMovies().entrySet().stream()
+                .flatMap(entry -> entry.getValue().stream())
+                .collect(Collectors.joining("!"));
+
+        System.out.println(titles);
     }
 }
