@@ -5,32 +5,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
+
 public final class Library {
 
     private final List<String> books = new ArrayList<>();
 
-    @Autowired // Wstrzykiwanie zależności do właściwości klasy
     private LibraryDbController libraryDbController;
 
-    // Wstrzykiwanie zależności przez konstruktor
-    /*
-
-    @Autowired
-    public Library(LibraryDbController libraryDbController) {
+    public Library(final LibraryDbController libraryDbController) {
         this.libraryDbController = libraryDbController;
     }
+
     public Library() {
-        // do nothing
-    }*/
-
-
-    // Wstrzykiwanie zależności przy pomocy metody
-    /*@Autowired
-    public void setLibraryDbController(LibraryDbController libraryDbController) {
-        this.libraryDbController = libraryDbController;
-    }*/
-
+    }
 
 
     public void saveToDb() {
