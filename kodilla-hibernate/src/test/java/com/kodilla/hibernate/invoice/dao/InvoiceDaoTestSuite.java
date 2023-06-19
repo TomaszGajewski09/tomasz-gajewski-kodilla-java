@@ -69,47 +69,4 @@ public class InvoiceDaoTestSuite {
 //        }
     }
 
-    /*@Test
-    public void testSaveInvoiceWithItems() {
-        // Tworzenie produktów
-        Product product1 = new Product();
-        product1.setName("Product 1");
-        productDao.save(product1);
-
-        Product product2 = new Product();
-        product2.setName("Product 2");
-        productDao.save(product2);
-
-        // Tworzenie faktury
-        Invoice invoice = new Invoice();
-        invoice.setNumber("INV-001");
-
-        // Tworzenie pozycji
-        List<Item> items = new ArrayList<>();
-
-        Item item1 = new Item();
-        item1.setPrice(new BigDecimal("10.0"));
-        item1.setQuantity(2);
-        item1.setProduct(product1);
-        item1.setInvoice(invoice);
-        items.add(item1);
-
-        Item item2 = new Item();
-        item2.setPrice(new BigDecimal("15.0"));
-        item2.setQuantity(1);
-        item2.setProduct(product2);
-        item2.setInvoice(invoice);
-        items.add(item2);
-
-        invoice.setItems(items);
-
-        // Zapis faktury
-        invoiceDao.save(invoice);
-
-        // Sprawdzenie, czy faktura i powiązane pozycje zostały poprawnie zapisane w bazie danych
-//        assert invoice.getId() != null;
-//        assert item1.getId() != null;
-//        assert item2.getId() != null;
-    }
-*/
 }
