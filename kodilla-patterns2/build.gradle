@@ -1,11 +1,11 @@
 plugins {
-    id 'java'
     id 'org.springframework.boot' version '3.1.0'
     id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
 }
 
-group = 'com.kodilla'
-version = '0.0.1-SNAPSHOT'
+group 'com.kodilla'
+version '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -13,14 +13,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    testImplementation 'org.mockito:mockito-junit-jupiter:5.2.0'
 }
 
-tasks.named('test') {
+test {
     useJUnitPlatform()
 }

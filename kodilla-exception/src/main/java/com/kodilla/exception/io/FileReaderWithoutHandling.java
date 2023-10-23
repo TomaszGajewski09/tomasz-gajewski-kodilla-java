@@ -1,6 +1,6 @@
 package com.kodilla.exception.io;
 
-import com.kodilla.exception.test.FirstChallenge;
+//import com.kodilla.exception.test.FirstChallenge;
 
 import java.io.File;
 import java.io.IOException;
