@@ -1,7 +1,4 @@
-package com.kodilla.decorator.taxiportal;
-
-import com.kodilla.decorator.taxiportal.AbstractTaxiOrderDecorator;
-import com.kodilla.decorator.taxiportal.TaxiOrder;
+package com.kodilla.patterns2.decorator.taxiportal;
 
 import java.math.BigDecimal;
 
