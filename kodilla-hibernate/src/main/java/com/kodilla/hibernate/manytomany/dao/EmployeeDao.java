@@ -1,6 +1,5 @@
 package com.kodilla.hibernate.manytomany.dao;
 
-import com.kodilla.hibernate.manytomany.Company;
 import com.kodilla.hibernate.manytomany.Employee;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.Query;
@@ -18,6 +17,9 @@ public interface EmployeeDao extends CrudRepository<Employee, Integer> {
 
     @Query
     List<Employee> retrieveEmployeeThatLastname(@Param("lastname") String lastname);
+
+    @Query
+    List<Employee> retrieveEmployeeByFragmentOfLastname(@Param("ARG") String arg);
 
 //    @Query
 //    List<Employee> retrieveEmployeeThatLastname();
