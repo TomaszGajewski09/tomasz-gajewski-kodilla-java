@@ -9,8 +9,9 @@ import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//CHANGE connection DbMenager to kodilla_course_30
 public class StoredProcTestSuite {
-    @Test
+   /* @Test
     public void testUpdateVipLevels() throws SQLException {
         // Given
         DbManager dbManager = DbManager.getInstance();
@@ -66,5 +67,5 @@ public class StoredProcTestSuite {
         rs.close();
         statement.close();
         statement2.close();
-    }
+    }*/
 }

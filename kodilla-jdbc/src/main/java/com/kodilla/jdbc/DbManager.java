@@ -17,7 +17,7 @@ public enum DbManager {
         connectionProps.put("password", "Tg022922");     // [6]
         try {
             conn = DriverManager.getConnection(                  // [7]
-                    "jdbc:mysql://localhost:3306/kodilla_course_30" +
+                    "jdbc:mysql://localhost:3306/kodilla_course" +
                             "?serverTimezone=Europe/Warsaw" +
                             "&useSSL=False",                                  // [10]
                     connectionProps);                                 // [11]
