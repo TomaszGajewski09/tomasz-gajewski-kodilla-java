@@ -12,6 +12,7 @@ repositories {
 dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
 }
 
